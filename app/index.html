@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW(). init();
+    </script>
+    <title>game</title>
+</head>
+<body>
+<header class="header wow slideInDown">
+    <!--слайдер шапки-->
+    <div class="header__slider">
+        <div class="item">
+            <div class="header__text">Mass Effect</div>
+            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <img src="img/mass.jpg" alt="Mass Effect">
+        </div>
+        <div class="item">
+            <div class="header__text">Batman</div>
+            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <img src="img/batman.jpg" alt="Batman">
+        </div>
+        <div class="item">
+            <div class="header__text">Destiny</div>
+            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <img src="img/destiny.jpg" alt="Destiny">
+        </div>
+        <div class="item">
+            <div class="header__text">Uncharted 4</div>
+            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <img src="img/uncharted4.jpg" alt="Uncharted">
+        </div>
+        <div class="item">
+            <div class="header__text">Dark souls</div>
+            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <img src="img/dark__souls3.jpg" alt="Dark Souls 3">
+        </div>
+    </div>
+        <div class="container">
+            <!--навигация-->
+            <div class="header__top">
+                <h1 class="logo">game.ru</h1>
+                <div class="header__top__right">
+                    <form class="search-top" method="post">
+                        <input class="search-input wow flipInX" required placeholder="Поиск..." type="search" name="search" minlength="3">
+                    </form>
+                    <div class="search"><img src="img/search.svg" alt="search"></div>
+                    <div class="buy"><img src="img/buy.svg" alt="buy"></div>
+                </div>
+            </div>
+        </div>
+        <!--попап форма-->
+        <form method="POST" id="form-popup" class="popup mfp-hide">
+            <div class="login">Введите ваш email</div>
+            <div class="inset">
+                <p>
+                    <label for="email">ваш email</label>
+                    <input type="email" required name="email" id="email" placeholder="sophie@example.com">
+                </p>
+            </div>
+            <p class="p-container">
+                <input type="submit" name="go" id="go" value="Отправить">
+            </p>
+        </form>
+<div class="line"><img src="img/line.png" alt="Line"></div>
+</header>
+<section class="platform wow fadeInRight">
+    <div class="container">
+        <!--фильтры слайдера-->
+        <div class="container__platform">
+            <div class="platform__section">
+                <h2 class="platform__section__title">выберите категорию :</h2>
+                <div class="device tans" data-value=".all"><img src="img/all.png" alt="all">все</div>
+                <div class="device" data-value=".playstation__filter"><img src="img/playstation.png" alt="playstation">playStation</div>
+                <div class="device" data-value=".xbox__filter"><img src="img/xbox.png" alt="xbox">xbox</div>
+                <div class="device" data-value=".pc__filter"><img src="img/pc.png" alt="pc">personal computer</div>
+            </div>
+            <div class="btm__slide__platform">
+                <div class="prev platform__prev">
+                    <img src="img/prev__platform.png" alt="Prev">
+                </div>
+                <div class="next platform__next">
+                    <img src="img/next__platform.png" alt="Next">
+                </div>
+            </div>
+        </div>
+        <!--слайдер-карточка игр-->
+        <div class="sliderd__platform">
+            <div class="slide playstation__filter xbox__filter pc__filter all"><img src="img/assasin.png" alt="Assassin’s">
+                <div class="name__game">
+                    assassin's creed:
+                </div>
+                <div class="series">
+                    odyssey
+                </div>
+                <div class="assessment">
+                    7.2
+                </div>
+                <div class="genre">
+                    экшен, приключения
+                </div>
+                <div class="company__date">
+                    ubisoft, 2018
+                </div>
+                <div class="slide__bottom">
+                    <div class="price">
+                        $9.99
+                    </div>
+                    <div class="device__slide">
+                        <div class="device-item">
+                            <img src="img/playstation.png" alt="playstation">
+                        </div>
+                        <div class="device-item" >   
+                            <img src="img/xbox.png" alt="playstation">
+                        </div>
+                        <div class="device-item">
+                            <img src="img/pc.png" alt="pc">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide playstation__filter all"><img src="img/last__of__us.png" alt="Last Of Us">
+                <div class="name__game">
+                    the last of us:
+                </div>
+                <div class="series">
+                    remastered
+                </div>
+                <div class="assessment">
+                    8.2
+                </div>
+                <div class="genre">
+                    экшен, приключения
+                </div>
+                <div class="company__date">
+                    Naughty Dog, 2014
+                </div>
+                <div class="slide__bottom">
+                    <div class="price">
+                        $9.99
+                    </div>
+                    <div class="device__slide">
+                        <div class="device-item">
+                            <img src="img/playstation.png" alt="playstation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide playstation__filter all"><img src="img/good_of_war.png" alt="Good Of War">
+                <div class="name__game">
+                    god of war
+                </div>
+                <div class="assessment">
+                    9.5
+                </div>
+                <div class="genre">
+                    экшен, приключения
+                </div>
+                <div class="company__date">
+                    Santa Monica Studio, 2018
+                </div>
+                <div class="slide__bottom">
+                    <div class="price">
+                        $9.99
+                    </div>
+                    <div class="device__slide">
+                        <div class="device-item">
+                            <img src="img/playstation.png" alt="playstation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide xbox__filter all"><img src="img/need__for__speed.png" alt="Need For Speed">
+                <div class="name__game">
+                    need for speed:
+                </div>
+                <div class="series">
+                    heat
+                </div>
+                <div class="assessment">
+                    7.2
+                </div>
+                <div class="genre">
+                    гонки
+                </div>
+                <div class="company__date">
+                    Electronic Arts Inc, 2019
+                </div>
+                <div class="slide__bottom">
+                    <div class="price">
+                        $9.99
+                    </div>
+                    <div class="device__slide">
+                        <div class="device-item">
+                            <img src="img/xbox.png" alt="xbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide xbox__filter all"><img src="img/need__for__speed.png" alt="Need For Speed">
+                <div class="name__game">
+                    need for speed:
+                </div>
+                <div class="series">
+                    heat
+                </div>
+                <div class="assessment">
+                    7.2
+                </div>
+                <div class="genre">
+                    гонки
+                </div>
+                <div class="company__date">
+                    Electronic Arts Inc, 2019
+                </div>
+                <div class="slide__bottom">
+                    <div class="price">
+                        $9.99
+                    </div>
+                    <div class="device__slide">
+                        <div class="device-item">
+                            <img src="img/xbox.png" alt="xbox">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide playstation__filter all"><img src="img/last__of__us.png" alt="Last Of Us">
+                <div class="name__game">
+                    the last of us:
+                </div>
+                <div class="series">
+                    remastered
+                </div>
+                <div class="assessment">
+                    8.2
+                </div>
+                <div class="genre">
+                    экшен, приключения
+                </div>
+                <div class="company__date">
+                    Naughty Dog, 2014
+                </div>
+                <div class="price">
+                    $3,99
+                </div>
+                <div class="slide__bottom">
+                    <div class="price">
+                        $9.99
+                    </div>
+                    <div class="device__slide">
+                        <div class="device-item">
+                            <img src="img/playstation.png" alt="playstation">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide playstation__filter xbox__filter pc__filter all"><img src="img/assasin.png" alt="Assassin’s">
+                <a href="#pop" class="name__game popup__platform">
+                    assassin's creed:
+                </a>
+                <a href="#pop" class="series popup__platform">
+                    odyssey
+                </a>
+                <div class="assessment">
+                    7.2
+                </div>
+                <div class="genre">
+                    экшен, приключения
+                </div>
+                <div class="company__date">
+                    ubisoft, 2018
+                </div>
+                <div class="price">
+                    $9.99
+                </div>
+                <div class="playstation">
+                    <img src="img/playstation.png" alt="playstation">
+                </div>
+                <div class="xbox__device">
+                    <img src="img/xbox.png" alt="xbox">
+                </div>
+                <div class="slide__bottom">
+                    <div class="price">
+                        $9.99
+                    </div>
+                    <div class="device__slide">
+                        <div class="device-item">
+                            <img src="img/playstation.png" alt="playstation">
+                        </div>
+                        <div class="device-item">
+                            <img src="img/xbox.png" alt="xbox">
+                        </div>
+                        <div class="device-item">
+                            <img src="img/pc.png" alt="pc">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pre-order wow fadeInLeft">
+    <div class="container">
+        <!--слайдер анонса игр-->
+        <div class="pre-order__header">
+            <h2 class="pre-order__title">Анонс игр:</h2>
+            <div class="btm__slide__platform">
+                <div class="prev preorder__prev">
+                    <img src="img/prev__platform.png" alt="Prev">
+                </div>
+                <div class="next preorder__next">
+                    <img src="img/next__platform.png" alt="Next">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pre-order__slider">
+        <div class= "pre-order__slide">
+            <img src="img/world.jpg" alt="World">
+        </div>
+        <div class="pre-order__slide">
+            <img src="img/thones.jpg" alt="Thones">
+        </div>
+        <div class="pre-order__slide">
+            <img src="img/arkham.jpg" alt="Arkham">
+        </div>
+    </div>
+</section>
+<section class="categories wow fadeInRight">
+    <div class="container">
+        <h2 class="categories__header">Игры по категориям:</h2>
+        <div class="categories__slide">
+            <div class="categories__top">
+                <div class="adventure"><a href="#" class="categories__adventure" >приключения</a><a href="#"><img src="img/adventure.png" alt="Adventure"></a></div>
+                <div class="sport"><a href="#" class="categories__sport">спорт</a><a href="#"><img src="img/sport.png" alt="Sport"></a></div>
+            </div>
+            <div class="categories__buttom">
+                <div class="rpg"><a href="#" class="categories__rpg">RPG</a><a href="#"><img src="img/rpg.png" alt="Rpg"></a></div>
+                <div class="shuter"><a href="#" class="categories__shuter">шутеры</a><a href="#"><img src="img/shuter.png" alt="Shuter"></a></div>
+            </div>
+            <a class="categories__show" href="#">Показать больше</a>
+            <div class="categories__none">
+            <div class="categories__top">
+                <div class="adventure"><a href="#" class="categories__adventure">приключения</a><a href="#"><img
+                            src="img/adventure.png" alt="Adventure"></a></div>
+                <div class="sport"><a href="#" class="categories__sport">спорт</a><a href="#"><img src="img/sport.png"
+                            alt="Sport"></a></div>
+            </div>
+            <div class="categories__buttom">
+                <div class="rpg"><a href="#" class="categories__rpg">RPG</a><a href="#"><img src="img/rpg.png" alt="Rpg"></a></div>
+                <div class="shuter"><a href="#" class="categories__shuter">шутеры</a><a href="#"><img src="img/shuter.png"
+                            alt="Shuter"></a></div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer wow fadeInLeft">
+    <div class="line"><img src="img/line.png" alt="Line"></div>
+    <div class="container">
+        <div class="footer__conteiner">
+            <div class="footer__left">
+                <div class="footer__name__site">game.ru</div>
+                <div class="social__bar">
+                    <a class="link-footer" href="#"><img src="img/youtube.png" alt="Youtube"></a>
+                    <a class="link-footer" href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                    <a class="link-footer" href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a class="link-footer" href="#"><img src="img/twitch.png" alt="Twitch"></a>
+                    <a class="link-footer" href="#"><img src="img/ok.png" alt="Ok"></a>
+                    <a class="link-footer" href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__game">игры
+                    <div class="game__line"></div>
+                    <a class="categories__footer red" href="#">
+                        симуляторы
+                    </a>
+                    <a class="categories__footer red" href="#">
+                        спорт
+                    </a>
+                    <a class="categories__footer red" href="#">
+                        статегии
+                    </a>
+                    <a class="categories__footer red" href="#">
+                        шутеры
+                    </a>
+                    <a class="categories__footer red" href="#">
+                        гонки
+                    </a>
+                </div>
+                <div class="publisher">издатели
+                    <div class="publisher__line"></div>
+                    <a class="categories__footer green" href="#">
+                        комментарии
+                    </a>
+                    <a class="categories__footer green" href="#">
+                        новости
+                    </a>
+                    <a class="categories__footer green" href="#">
+                        навигация
+                    </a>
+                    <a class="categories__footer green" href="#">
+                        статьи
+                    </a>
+                </div>
+                <div class="cate">категории 
+                    <div class="cate__line"></div>
+                    <a class="categories__footer" href="#">
+                        действие
+                    </a>
+                    <a class="categories__footer" href="#">
+                        приключение
+                    </a>
+                    <a class="categories__footer" href="#">
+                        стратегия
+                    </a>
+                    <a class="categories__footer" href="#">
+                        RPG
+                    </a>
+                    <a class="categories__footer" href="#">
+                        спорт
+                    </a>
+                    <a class="categories__footer" href="#">
+                        онлайн
+                    </a>
+                    <a class="categories__footer" href="#">
+                        симулятор
+                    </a>
+                    <a class="categories__footer" href="#">
+                        другие жанры
+                    </a>
+                </div> 
+                <div class="information">информация
+                    <div class="information__line"></div>
+                    <a class="categories__footer" href="#">
+                        конфиденциальность
+                    </a>
+                    <a class="categories__footer" href="#">
+                        Условия
+                    </a>
+                    <a class="categories__footer" href="#">
+                        куки
+                    </a>
+                    <a class="categories__footer" href="#">
+                        авторское право
+                    </a>
+                    <a class="categories__footer" href="#">
+                        блог
+                    </a>
+                </div>
+                <div class="week">неделя
+                    <div class="week__line"></div>
+                    <a class="categories__footer" href="#">
+                        новости
+                    </a>
+                    <a class="categories__footer" href="#">
+                        статьи
+                    </a>
+                    <a class="categories__footer" href="#">
+                        пользователи
+                    </a>
+                    <a class="categories__footer" href="#">
+                        ссылки
+                    </a>
+                    <a class="categories__footer" href="#">
+                        поиск
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

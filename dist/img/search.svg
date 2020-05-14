@@ -1,0 +1,16 @@
+<svg id="Buscar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17.63" height="17.594" viewBox="0 0 17.63 17.594">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="1110.78" y="39.219" width="17.63" height="17.594" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="Buscar-2" data-name="Buscar" class="cls-1" d="M1122.05,39.208a6.319,6.319,0,0,0-6.34,6.276,6.156,6.156,0,0,0,1.35,3.858l-6.02,5.961a0.878,0.878,0,0,0,.01,1.267,0.923,0.923,0,0,0,.64.258,0.9,0.9,0,0,0,.65-0.267l6.03-5.972A6.3,6.3,0,1,0,1122.05,39.208Zm0,10.958a4.683,4.683,0,1,1,4.72-4.683A4.7,4.7,0,0,1,1122.05,50.166Z" transform="translate(-1110.78 -39.219)"/>
+</svg>

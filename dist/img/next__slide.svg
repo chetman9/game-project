@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="72" viewBox="0 0 12 72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="225" y="264" width="12" height="72" filterUnits="userSpaceOnUse">
+      <feFlood result="flood" flood-color="#fff"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="proximo" class="cls-1" d="M231,263.99l1.4,1.326h0l4.608,4.364-1.4,1.326L231,266.641l-4.609,4.365-1.4-1.326,4.609-4.364h0ZM230,267h2v69h-2V267Z" transform="translate(-225 -264)"/>
+</svg>
