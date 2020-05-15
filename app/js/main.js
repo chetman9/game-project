@@ -49,8 +49,8 @@ $(function(){
 
     //сладйер карточки игр
     $('.slider-platform').slick({
-        prevArrow: $('.platform__prev'),
-        nextArrow: $('.platform__next'),
+        prevArrow: $('.btm__prev_platform'),
+        nextArrow: $('.btm__next_platform'),
         infinite: false,
         speed: 300,
         slidesToShow: 4,
@@ -92,9 +92,9 @@ $(function(){
     });
  
     //слайдер анонса игр
-    $('.pre-order__slider').slick({
-        prevArrow: $('.preorder__prev'),
-        nextArrow: $('.preorder__next'),
+    $('.preview__slider').slick({
+        prevArrow: $('.btm__prev_preview'),
+        nextArrow: $('.btm__next_preview'),
         centerMode: true,
         centerPadding: '330px',
         slidesToShow: 1,
