@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,22 +25,22 @@
         <div class="header__item">
             <div class="header__text">Batman</div>
             <a href="#form-popup" class="header__preorder">Предзаказ</a>
-            <img src="img/batman.jpg" alt="Batman">
+            <img data-lazy="img/batman.jpg" alt="Batman">
         </div>
         <div class="header__item">
             <div class="header__text">Destiny</div>
             <a href="#form-popup" class="header__preorder">Предзаказ</a>
-            <img src="img/destiny.jpg" alt="Destiny">
+            <img data-lazy="img/destiny.jpg" alt="Destiny">
         </div>
         <div class="header__item">
             <div class="header__text">Uncharted 4</div>
             <a href="#form-popup" class="header__preorder">Предзаказ</a>
-            <img src="img/uncharted4.jpg" alt="Uncharted">
+            <img data-lazy="img/uncharted4.jpg" alt="Uncharted">
         </div>
         <div class="header__item">
             <div class="header__text">Dark souls</div>
             <a href="#form-popup" class="header__preorder">Предзаказ</a>
-            <img src="img/dark__souls3.jpg" alt="Dark Souls 3">
+            <img data-lazy="img/dark__souls3.jpg" alt="Dark Souls 3">
         </div>
     </div>
         <div class="container">
@@ -61,8 +61,8 @@
     <div class="container">
         <div class="platform__wrapper">
             <div class="platform__section">
-                <h2 class="platform__title">выберите категорию :</h2>
-                <div class="device tans" data-value=".all"><img src="img/all.png" alt="all">все</div>
+                <h2 class="title-section">выберите категорию :</h2>
+                <div class="device device_active" data-value=".all"><img src="img/all.png" alt="all">все</div>
                 <div class="device" data-value=".playstation__filter"><img src="img/playstation.png" alt="playstation">playStation</div>
                 <div class="device" data-value=".xbox__filter"><img src="img/xbox.png" alt="xbox">xbox</div>
                 <div class="device" data-value=".pc__filter"><img src="img/pc.png" alt="pc">personal computer</div>
@@ -83,18 +83,18 @@
                         <div class="slide-platform__name">assassin's creed: odyssey</div>
                         <div class="slide-platform__assessment">7.2</div>
                     </div>
-                    <div class="genre">экшен, приключения</div>
-                    <div class="company__date">ubisoft, 2018</div>
-                    <div class="slide__bottom">
-                        <div class="price">$9.99</div>
-                        <div class="device__slide">
-                            <div class="device-item">
+                    <div class="slide-platform__genre">экшен, приключения</div>
+                    <div class="slide-platform__company-date">ubisoft, 2018</div>
+                    <div class="slide-platform__bottom">
+                        <div class="slide-platform__price">$9.99</div>
+                        <div class="slide-platform__device">
+                            <div class="slide-platform__item">
                                 <img src="img/playstation.png" alt="playstation">
                             </div>
-                            <div class="device-item" >   
+                            <div class="slide-platform__item" >   
                                 <img src="img/xbox.png" alt="playstation">
                             </div>
-                            <div class="device-item">
+                            <div class="slide-platform__item">
                                 <img src="img/pc.png" alt="pc">
                             </div>
                         </div>
@@ -107,12 +107,12 @@
                         <div class="slide-platform__name">the last of us: remastered</div>
                         <div class="slide-platform__assessment">8.2</div>
                     </div>
-                    <div class="genre">экшен, приключения</div>
-                    <div class="company__date">Naughty Dog, 2014</div>
-                    <div class="slide__bottom">
-                        <div class="price">$9.99</div>
-                        <div class="device__slide">
-                            <div class="device-item">
+                    <div class="slide-platform__genre">экшен, приключения</div>
+                    <div class="slide-platform__company-date">Naughty Dog, 2014</div>
+                    <div class="slide-platform__bottom">
+                        <div class="slide-platform__price">$9.99</div>
+                        <div class="slide-platform__device">
+                            <div class="slide-platform__item">
                                 <img src="img/playstation.png" alt="playstation">
                             </div>
                         </div>
@@ -144,11 +144,11 @@
                         <div class="slide-platform__assessment">7.2</div>
                     </div>
                     <div class="slide-platform__genre">гонки</div>
-                    <div class="company__date">Electronic Arts Inc, 2019</div>
-                    <div class="slide__bottom">
-                        <div class="price">$9.99</div>
-                        <div class="device__slide">
-                            <div class="device-item">
+                    <div class="slide-platform__company-date">Electronic Arts Inc, 2019</div>
+                    <div class="slide-platform__bottom">
+                        <div class="slide-platform__price">$9.99</div>
+                        <div class="slide-platform__device">
+                            <div class="slide-platform__item">
                                 <img src="img/xbox.png" alt="xbox">
                             </div>
                         </div>
@@ -161,12 +161,12 @@
                         <div class="slide-platform__name">need for speed: heat</div>
                         <div class="slide-platform__assessment">7.2</div>
                     </div>
-                    <div class="genre">гонки</div>
-                    <div class="company__date">Electronic Arts Inc, 2019</div>
-                    <div class="slide__bottom">
-                        <div class="price">$9.99</div>
-                        <div class="device__slide">
-                            <div class="device-item">
+                    <div class="slide-platform__genre">гонки</div>
+                    <div class="slide-platform__company-date">Electronic Arts Inc, 2019</div>
+                    <div class="slide-platform__bottom">
+                        <div class="slide-platform__price">$9.99</div>
+                        <div class="slide-platform__device">
+                            <div class="slide-platform__item">
                                 <img src="img/xbox.png" alt="xbox">
                             </div>
                         </div>
@@ -180,12 +180,12 @@
                         <div class="slide-platform__assessment">8.2
                         </div>
                     </div>
-                    <div class="genre">экшен, приключения</div>
-                    <div class="company__date">Naughty Dog, 2014</div>
-                    <div class="slide__bottom">
-                        <div class="price">$3,99</div>
-                        <div class="device__slide">
-                            <div class="device-item">
+                    <div class="slide-platform__genre">экшен, приключения</div>
+                    <div class="slide-platform__company-date">Naughty Dog, 2014</div>
+                    <div class="slide-platform__bottom">
+                        <div class="slide-platform__price">$3,99</div>
+                        <div class="slide-platform__device">
+                            <div class="slide-platform__item">
                                 <img src="img/playstation.png" alt="playstation">
                             </div>
                         </div>
@@ -198,18 +198,18 @@
                         <div class="slide-platform__name">assassin's creed: odyssey</div>
                         <div class="slide-platform__assessment">7.2</div>
                     </div>
-                    <div class="genre">экшен, приключения</div>
-                    <div class="company__date">ubisoft, 2018</div>
-                    <div class="slide__bottom">
-                        <div class="price">$9.99</div>
-                        <div class="device__slide">
-                            <div class="device-item">
+                    <div class="slide-platform__genre">экшен, приключения</div>
+                    <div class="slide-platform__company-date">ubisoft, 2018</div>
+                    <div class="slide-platform__bottom">
+                        <div class="slide-platform__price">$9.99</div>
+                        <div class="slide-platform__device">
+                            <div class="slide-platform__item">
                                 <img src="img/playstation.png" alt="playstation">
                             </div>
-                            <div class="device-item">
+                            <div class="slide-platform__item">
                                 <img src="img/xbox.png" alt="xbox">
                             </div>
-                            <div class="device-item">
+                            <div class="slide-platform__item">
                                 <img src="img/pc.png" alt="pc">
                             </div>
                         </div>
@@ -222,7 +222,7 @@
 <section class="preview wow fadeInLeft">
     <div class="container">
         <div class="preview__header">
-            <h2 class="preview__title">Анонс игр:</h2>
+            <h2 class="title-section">Анонс игр:</h2>
             <div class="btm">
                 <div class="btm__prev btm__prev_preview">
                     <img src="img/prev__platform.png" alt="Prev">
@@ -234,14 +234,40 @@
         </div>
     </div>
     <div class="preview__slider">
-        <div class= "ppreview__slide">
-            <img src="img/world.jpg" alt="World">
+        <div class= "preview__slide"><img src="img/d7c4f3a2-d969-40b5-a086-e298cfe7baf3.jpg" alt="World">
+            <div class="preview__wrapper-slide">
+                <div class="preview__name">What Remains of Edith Finch</div>
+                <div class="preview__date">Дата выхода: 20.06.2020</div>
+                <a class="preview__play" href="#"><img src="img/kisspng-youtube-play-button-logo-computer-icons-d-management-group-srl-5b392bdc6927c3.3260656515304734364307.png" alt="play"></a>
+            </div>
         </div>
-        <div class="preview__slide">
-            <img src="img/thones.jpg" alt="Thones">
+        <div class="preview__slide"><img src="img/61705806-1f0e-4016-96c0-070cef780328.jpg" alt="Thones">
+            <div class="preview__wrapper-slide">
+                <div class="preview__name">What Remains of Edith Finch</div>
+                <div class="preview__date">Дата выхода: 20.06.2020</div>
+                <a class="preview__play" href="#"><img src="img/kisspng-youtube-play-button-logo-computer-icons-d-management-group-srl-5b392bdc6927c3.3260656515304734364307.png" alt="play"></a>
+            </div>
         </div>
-        <div class="preview__slide">
-            <img src="img/arkham.jpg" alt="Arkham">
+        <div class="preview__slide"><img src="img/Dying_Light_2015.jpg" alt="Arkham">
+            <div class="preview__wrapper-slide">
+                <div class="preview__name">What Remains of Edith Finch</div>
+                <div class="preview__date">Дата выхода: 20.06.2020</div>
+                <a class="preview__play" href="#"><img src="img/kisspng-youtube-play-button-logo-computer-icons-d-management-group-srl-5b392bdc6927c3.3260656515304734364307.png" alt="play"></a>
+            </div>
+        </div>
+        <div class="preview__slide"><img src="img/vampire.png" alt="Arkham">
+            <div class="preview__wrapper-slide">
+                <div class="preview__name">What Remains of Edith Finch</div>
+                <div class="preview__date">Дата выхода: 20.06.2020</div>
+                <a class="preview__play" href="#"><img src="img/kisspng-youtube-play-button-logo-computer-icons-d-management-group-srl-5b392bdc6927c3.3260656515304734364307.png" alt="play"></a>
+            </div>
+        </div>
+        <div class="preview__slide"><img src="img/08d370e81abf4773ba05b74dec675dfe.jpg" alt="Arkham">
+            <div class="preview__wrapper-slide">
+                <div class="preview__name">What Remains of Edith Finch</div>
+                <div class="preview__date">Дата выхода: 20.06.2020</div>
+                <a class="preview__play" href="#"><img src="img/kisspng-youtube-play-button-logo-computer-icons-d-management-group-srl-5b392bdc6927c3.3260656515304734364307.png" alt="play"></a>
+            </div>
         </div>
     </div>
 </section>

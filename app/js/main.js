@@ -37,6 +37,7 @@ $(function(){
         fade: true,
         cssEase: 'linear',
         lazyLoad: 'ondemand',
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -55,6 +56,7 @@ $(function(){
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 2,
+        adaptiveHeight: true,
         lazyLoad: 'ondemand',
         responsive: [
             {
@@ -87,27 +89,19 @@ $(function(){
         var filterClass = $(this).data('value');
         $('.slider-platform').slick('slickUnfilter');
         $('.slider-platform').slick('slickFilter', filterClass);
-        $('.device').removeClass('tans');
-        $(this).addClass('tans');
+        $('.device').removeClass('device_active');
+        $(this).addClass('device_active');
     });
  
     //слайдер анонса игр
     $('.preview__slider').slick({
         prevArrow: $('.btm__prev_preview'),
         nextArrow: $('.btm__next_preview'),
-        centerMode: true,
-        centerPadding: '330px',
-        slidesToShow: 1,
+        slidesToShow: 2,
         lazyLoad: 'ondemand',
+        adaptiveHeight: true,
         responsive: [
-            {
-                breakpoint: 1350,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '0px',
-                }
-            },
+
             {
                 breakpoint: 480,
                 settings: {
