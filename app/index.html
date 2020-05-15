@@ -17,41 +17,41 @@
 <body>
 <header class="header wow slideInDown">
     <div class="header__slider">
-        <div class="item">
+        <div class="header__item">
             <div class="header__text">Mass Effect</div>
-            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <a href="#form-popup" class="header_preorder">Предзаказ</a>
             <img src="img/mass.jpg" alt="Mass Effect">
         </div>
-        <div class="item">
+        <div class="header__item">
             <div class="header__text">Batman</div>
-            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <a href="#form-popup" class="header_preorder">Предзаказ</a>
             <img src="img/batman.jpg" alt="Batman">
         </div>
-        <div class="item">
+        <div class="header__item">
             <div class="header__text">Destiny</div>
-            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <a href="#form-popup" class="header_preorder">Предзаказ</a>
             <img src="img/destiny.jpg" alt="Destiny">
         </div>
-        <div class="item">
+        <div class="header__item">
             <div class="header__text">Uncharted 4</div>
-            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <a href="#form-popup" class="header_preorder">Предзаказ</a>
             <img src="img/uncharted4.jpg" alt="Uncharted">
         </div>
-        <div class="item">
+        <div class="header__item">
             <div class="header__text">Dark souls</div>
-            <a href="#form-popup" class="preorder">Предзаказ</a>
+            <a href="#form-popup" class="header_preorder">Предзаказ</a>
             <img src="img/dark__souls3.jpg" alt="Dark Souls 3">
         </div>
     </div>
         <div class="container">
             <div class="header__top">
-                <h1 class="logo">game.ru</h1>
-                <div class="header__top__right">
+                <h1 class="header_logo">game.ru</h1>
+                <div class="header__top-right">
                     <form class="search-top" method="post">
                         <input class="search-input wow flipInX" required placeholder="Поиск..." type="search" name="search" minlength="3">
                     </form>
-                    <div class="search"><img src="img/search.svg" alt="search"></div>
-                    <div class="buy"><img src="img/buy.svg" alt="buy"></div>
+                    <div class="header__search"><img src="img/search.svg" alt="search"></div>
+                    <div class="header__buy"><img src="img/buy.svg" alt="buy"></div>
                 </div>
             </div>
         </div>
@@ -71,114 +71,145 @@
 </header>
 <section class="platform wow fadeInRight">
     <div class="container">
-        <div class="container__platform">
+        <div class="platform__wrapper">
             <div class="platform__section">
-                <h2 class="platform__section__title">выберите категорию :</h2>
+                <h2 class="platform__title">выберите категорию :</h2>
                 <div class="device tans" data-value=".all"><img src="img/all.png" alt="all">все</div>
                 <div class="device" data-value=".playstation__filter"><img src="img/playstation.png" alt="playstation">playStation</div>
                 <div class="device" data-value=".xbox__filter"><img src="img/xbox.png" alt="xbox">xbox</div>
                 <div class="device" data-value=".pc__filter"><img src="img/pc.png" alt="pc">personal computer</div>
             </div>
-            <div class="btm__slide__platform">
-                <div class="prev platform__prev">
+            <div class="platform__btm">
+                <div class="platform__prev platform__prev_prev">
                     <img src="img/prev__platform.png" alt="Prev">
                 </div>
-                <div class="next platform__next">
+                <div class="platform__next platform__next_next">
                     <img src="img/next__platform.png" alt="Next">
                 </div>
             </div>
         </div>
-        <div class="sliderd__platform">
-            <div class="slide playstation__filter xbox__filter pc__filter all"><img src="img/assasin.png" alt="Assassin’s">
-                <div class="name__game">
-                    assassin's creed:
-                </div>
-                <div class="series">
-                    odyssey
-                </div>
-                <div class="assessment">
-                    7.2
-                </div>
-                <div class="genre">
-                    экшен, приключения
-                </div>
-                <div class="company__date">
-                    ubisoft, 2018
-                </div>
-                <div class="slide__bottom">
-                    <div class="price">
-                        $9.99
-                    </div>
-                    <div class="device__slide">
-                        <div class="device-item">
-                            <img src="img/playstation.png" alt="playstation">
+        <div class="slider-platform">
+            <div class="slide-platform playstation__filter xbox__filter pc__filter all"><img src="img/assasin.png" alt="Assassin’s">
+                <div class="slide-platform__wrapper">
+                    <div class="slide-platform__top">
+                        <div class="name__game">
+                            assassin's creed: odyssey
                         </div>
-                        <div class="device-item" >   
-                            <img src="img/xbox.png" alt="playstation">
-                        </div>
-                        <div class="device-item">
-                            <img src="img/pc.png" alt="pc">
+                        <div class="assessment">
+                            7.2
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="slide playstation__filter all"><img src="img/last__of__us.png" alt="Last Of Us">
-                <div class="name__game">
-                    the last of us:
-                </div>
-                <div class="series">
-                    remastered
-                </div>
-                <div class="assessment">
-                    8.2
-                </div>
-                <div class="genre">
-                    экшен, приключения
-                </div>
-                <div class="company__date">
-                    Naughty Dog, 2014
-                </div>
-                <div class="slide__bottom">
-                    <div class="price">
-                        $9.99
+                    <div class="genre">
+                        экшен, приключения
                     </div>
-                    <div class="device__slide">
-                        <div class="device-item">
-                            <img src="img/playstation.png" alt="playstation">
+                    <div class="company__date">
+                        ubisoft, 2018
+                    </div>
+                    <div class="slide__bottom">
+                        <div class="price">
+                            $9.99
+                        </div>
+                        <div class="device__slide">
+                            <div class="device-item">
+                                <img src="img/playstation.png" alt="playstation">
+                            </div>
+                            <div class="device-item" >   
+                                <img src="img/xbox.png" alt="playstation">
+                            </div>
+                            <div class="device-item">
+                                <img src="img/pc.png" alt="pc">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slide playstation__filter all"><img src="img/good_of_war.png" alt="Good Of War">
-                <div class="name__game">
-                    god of war
-                </div>
-                <div class="assessment">
-                    9.5
-                </div>
-                <div class="genre">
-                    экшен, приключения
-                </div>
-                <div class="company__date">
-                    Santa Monica Studio, 2018
-                </div>
-                <div class="slide__bottom">
-                    <div class="price">
-                        $9.99
+            <div class="slide-platform playstation__filter all"><img src="img/last__of__us.png" alt="Last Of Us">
+                <div class="slide-platform__wrapper">
+                    <div class="slide-platform__top">
+                        <div class="name__game">
+                            the last of us: remastered
+                        </div>
+                        <div class="assessment">
+                            8.2
+                        </div>
                     </div>
-                    <div class="device__slide">
-                        <div class="device-item">
-                            <img src="img/playstation.png" alt="playstation">
+                    <div class="genre">
+                        экшен, приключения
+                    </div>
+                    <div class="company__date">
+                        Naughty Dog, 2014
+                    </div>
+                    <div class="slide__bottom">
+                        <div class="price">
+                            $9.99
+                        </div>
+                        <div class="device__slide">
+                            <div class="device-item">
+                                <img src="img/playstation.png" alt="playstation">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slide xbox__filter all"><img src="img/need__for__speed.png" alt="Need For Speed">
-                <div class="name__game">
-                    need for speed:
+            <div class="slide-platform playstation__filter all"><img src="img/good_of_war.png" alt="Good Of War">
+                <div class="slide-platform__wrapper">
+                    <div class="slide-platform__top">
+                        <div class="name__game">
+                            god of war
+                        </div>
+                        <div class="assessment">
+                            9.5
+                        </div>
+                    </div>
+                    <div class="genre">
+                        экшен, приключения
+                    </div>
+                    <div class="company__date">
+                        Santa Monica Studio, 2018
+                    </div>
+                    <div class="slide__bottom">
+                        <div class="price">
+                            $9.99
+                        </div>
+                        <div class="device__slide">
+                            <div class="device-item">
+                                <img src="img/playstation.png" alt="playstation">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="series">
-                    heat
+            </div>
+            <div class="slide-platform xbox__filter all"><img src="img/need__for__speed.png" alt="Need For Speed">
+                <div class="slide-platform__wrapper">
+                    <div class="slide-platform__top">
+                        <div class="name__game">
+                            need for speed: heat
+                        </div>
+                        <div class="assessment">
+                            7.2
+                        </div>
+                    </div>
+                    <div class="genre">
+                        гонки
+                    </div>
+                    <div class="company__date">
+                        Electronic Arts Inc, 2019
+                    </div>
+                    <div class="slide__bottom">
+                        <div class="price">
+                            $9.99
+                        </div>
+                        <div class="device__slide">
+                            <div class="device-item">
+                                <img src="img/xbox.png" alt="xbox">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-platform xbox__filter all"><img src="img/need__for__speed.png" alt="Need For Speed">
+                <div class="name__game">
+                    need for speed: heat
                 </div>
                 <div class="assessment">
                     7.2
@@ -200,39 +231,9 @@
                     </div>
                 </div>
             </div>
-            <div class="slide xbox__filter all"><img src="img/need__for__speed.png" alt="Need For Speed">
+            <div class="slide-platform playstation__filter all"><img src="img/last__of__us.png" alt="Last Of Us">
                 <div class="name__game">
-                    need for speed:
-                </div>
-                <div class="series">
-                    heat
-                </div>
-                <div class="assessment">
-                    7.2
-                </div>
-                <div class="genre">
-                    гонки
-                </div>
-                <div class="company__date">
-                    Electronic Arts Inc, 2019
-                </div>
-                <div class="slide__bottom">
-                    <div class="price">
-                        $9.99
-                    </div>
-                    <div class="device__slide">
-                        <div class="device-item">
-                            <img src="img/xbox.png" alt="xbox">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide playstation__filter all"><img src="img/last__of__us.png" alt="Last Of Us">
-                <div class="name__game">
-                    the last of us:
-                </div>
-                <div class="series">
-                    remastered
+                    the last of us: remastered
                 </div>
                 <div class="assessment">
                     8.2
@@ -257,13 +258,10 @@
                     </div>
                 </div>
             </div>
-            <div class="slide playstation__filter xbox__filter pc__filter all"><img src="img/assasin.png" alt="Assassin’s">
-                <a href="#pop" class="name__game popup__platform">
-                    assassin's creed:
-                </a>
-                <a href="#pop" class="series popup__platform">
-                    odyssey
-                </a>
+            <div class="slide-platform playstation__filter xbox__filter pc__filter all"><img src="img/assasin.png" alt="Assassin’s">
+                <div class="name__game">
+                    assassin's creed: odyssey
+                </div>
                 <div class="assessment">
                     7.2
                 </div>

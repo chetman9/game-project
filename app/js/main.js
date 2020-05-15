@@ -48,7 +48,7 @@ $(function(){
     });
 
     //сладйер карточки игр
-    $('.sliderd__platform').slick({
+    $('.slider-platform').slick({
         prevArrow: $('.platform__prev'),
         nextArrow: $('.platform__next'),
         infinite: false,
@@ -85,8 +85,8 @@ $(function(){
     //фильтры слайдера
     $('.device').on('click', function () {
         var filterClass = $(this).data('value');
-        $('.sliderd__platform').slick('slickUnfilter');
-        $('.sliderd__platform').slick('slickFilter', filterClass);
+        $('.slider-platform').slick('slickUnfilter');
+        $('.slider-platform').slick('slickFilter', filterClass);
         $('.device').removeClass('tans');
         $(this).addClass('tans');
     });

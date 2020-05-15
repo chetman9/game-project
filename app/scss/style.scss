@@ -45,7 +45,7 @@ input:valid {
     max-width: 1400px;
     width: 100%;
 
-    .item {
+    .header__item {
         position: relative;
 
         a {
@@ -53,7 +53,7 @@ input:valid {
         }
     }
 
-    .item img {
+    .header__item img {
         max-width: 100%;
         width: 100%;
     }
@@ -72,7 +72,7 @@ input:valid {
     text-shadow: 1px 1px 2px #000;
 }
 
-.preorder {
+.header_preorder {
     position: absolute;
     top: 60%;
     color: #fff;
@@ -106,7 +106,7 @@ input:valid {
     z-index: 2;
 }
 
-.logo {
+.header_logo {
     font-size: 18px;
     font-weight: 700;
     position: fixed;
@@ -118,7 +118,7 @@ input:valid {
 
 
 
-.header__top__right {
+.header__top-right {
     display: flex;
     position: fixed;
     top: 0;
@@ -144,7 +144,7 @@ input:valid {
         padding-top: 30px;
     }
 
-    .search {
+    .header__search {
         margin-right: 40px;
         cursor: pointer;
     }
@@ -248,7 +248,7 @@ input:valid {
     max-width: 100%;
 }
 
-.container__platform {
+.platform__wrapper {
     display: flex;
     justify-content: space-between;
     margin-top: 70px;
@@ -262,7 +262,7 @@ input:valid {
         align-items: baseline;
         color: #cacacb;
 
-        .platform__section__title {
+        .platform__title {
             font-size: 15px;
         }
 
@@ -286,64 +286,51 @@ input:valid {
 }
 
 
-.btm__slide__platform {
+.platform__btm {
     display: flex;
     cursor: pointer;
 
-    .prev {
+    .platform__prev_prev {
         margin-right: 20px;
 
     }
 }
 
-.sliderd__platform {
+.slider-platform {
     margin-top: 40px;
 
-    .slide {
-        position: relative;
+    .slide-platform {
         height: 360px;
+        position: relative;
     }
 }
 
-.name__game {
+.slide-platform__wrapper {
+    margin: 0 20px;
+    width: 200px;
     position: absolute;
+    bottom: 10px;
+}
+
+.slide-platform__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
     color: #fff;
-    bottom: 115px;
-    left: 20px;
+    margin-bottom: 20px;
     font-size: 18px;
     opacity: .75;
     text-transform: capitalize;
 }
 
 .assessment {
-    position: absolute;
-    left: 170px;
-    bottom: 103px;
     border-radius: 50%;
-    border: 2px solid #282a2c;
-    color: #fff;
-    padding: 10px;
-    opacity: .75;
-    font-size: 18px;
-    font-weight: regular;
-}
-
-.series {
-    position: absolute;
-    color: #fff;
-    bottom: 95px;
-    left: 20px;
-    font-size: 18px;
-    font-weight: regular;
-    opacity: .75;
-    text-transform: capitalize;
+    border: 3px solid #282a2c;
+    padding: 12px;
 }
 
 .genre {
-    position: absolute;
     color: #7c7c7c;
-    bottom: 65px;
-    left: 20px;
     font-size: 12px;
     opacity: .75;
     font-weight: bold;
@@ -351,28 +338,22 @@ input:valid {
 }
 
 .company__date {
-    position: absolute;
     color: #676768;
-    bottom: 50px;
-    left: 20px;
     font-size: 12px;
     opacity: .75;
     text-transform: capitalize;
 }
 
 .slide__bottom {
-    margin: 0 20px;
     display: flex;
     justify-content: space-between;
-    width: 200px;
-    position: absolute;
-    bottom: 15px;
     align-items: center;
+    margin-top: 20px;
+    opacity: .75;
 
     .price {
         color: #fff;
         font-size: 18px;
-        opacity: .75;
         display: flex;
     }
 
@@ -380,8 +361,6 @@ input:valid {
         display: flex;
 
         .device-item {
-            color: #fff;
-            opacity: .75;
             margin-right: 10px;
         }
     }
@@ -898,7 +877,7 @@ label:hover~input[type=password] {
 
 @media screen and (max-width: 1024px) {
 
-    .logo {
+    .header_logo {
         left: 2%;
     }
 
@@ -923,7 +902,7 @@ label:hover~input[type=password] {
         font-size: 20px;
     }
 
-    .preorder {
+    .header_preorder {
         font-size: 25px;
         top: 55%;
     }
@@ -992,7 +971,7 @@ label:hover~input[type=password] {
         margin-top: -100px;
     }
 
-    
+
 
     .categories__footer,
     .publisher,
