@@ -18,17 +18,10 @@ $(function(){
         $('.search').remove();
     });
 
-    //попап форма
-    $('.preorder').magnificPopup({
-        type: 'inline',
-        focus: '#name',
-        mainClass: 'animated flipInY'
-    });
-
     //сладйер шапки
     $('.header__slider').slick({
-        prevArrow: '<img class="slide__prev" src="img/prev__slide.svg">',
-        nextArrow: '<img class="slide__next" src="img/next__slide.svg">',
+        prevArrow: '<img class="slide__prev" src="img/header/prev__slide.svg">',
+        nextArrow: '<img class="slide__next" src="img/header/next__slide.svg">',
         autoplay: true,
         autoplayTimeout: 2000, 
         dots: true,
@@ -101,7 +94,6 @@ $(function(){
         lazyLoad: 'ondemand',
         adaptiveHeight: true,
         responsive: [
-
             {
                 breakpoint: 480,
                 settings: {

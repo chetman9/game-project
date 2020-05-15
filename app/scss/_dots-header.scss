@@ -54,12 +54,12 @@
     left: 0;
     width: 20px;
     height: 20px;
-    content: url('../img/my__dots.svg');
+    content: url('../img/header/my__dots.svg');
     text-align: center;
     color: black;
 }
 
 .my-dots li.slick-active button:before {
-    content: url('../img/my__dots__active.svg');
+    content: url('../img/header/my__dots__active.svg');
     margin-top: 2px;
 }
