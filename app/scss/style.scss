@@ -1,5 +1,6 @@
 @import "libs";
 @import "dots-header";
+@import "vars";
 
 body {
     background: #000;
@@ -17,10 +18,10 @@ body {
 ::-webkit-scrollbar-thumb {
     background: #fff;
     border-radius: 8px;
-    border: 3px solid #8c8c8c;
+    border: 3px solid $main-color;
 
     &:hover {
-        background: #8c8c8c;
+        background: $main-color;
     }
 }
 
@@ -36,27 +37,22 @@ body {
         margin: 0 auto;
         max-width: 1400px;
         width: 100%;
-
-        &__item {
-            position: relative;
-        }
-
-        a {
-            text-decoration: none;
-        }
     }
 
-    &__item img {
-        max-width: 100%;
-        width: 100%;
+    &__item {
+        position: relative;
+
+        img {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 
     &__text {
         position: absolute;
         top: 50%;
         left: 60%;
-        opacity: .9;
-        color: #fff;
+        color: $main-color;
         font-size: 35px;
         text-transform: uppercase;
         letter-spacing: 7px;
@@ -67,24 +63,21 @@ body {
     &__preorder {
         position: absolute;
         top: 60%;
-        color: #fff;
-        opacity: .9;
+        color: $main-color;
         left: 60%;
         width: 150px;
         height: 40px;
-        border-bottom: 2px solid #fff;
-        text-align: center;
+        border-bottom: 2px solid $main-color;
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 20px;
         text-shadow: 1px 1px 2px #000;
         outline: none;
+        text-decoration: none;
 
         &:hover {
-            color: #FF0000;
-            border-bottom: 2px solid #FF0000;
-            transition: 1s all;
+            transition: $main-transition;
             transform: scale(1.1);
         }
     }
@@ -132,7 +125,7 @@ body {
     opacity: .8;
 
     &:hover {
-        transition: ease 0.3s all;
+        transition: $main-transition;
         transform: scale(1.1);
     }
 }
@@ -156,29 +149,33 @@ body {
     }
 }
 
-.platform__wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin: 70px 0 40px 0;
+.platform {
+    padding-bottom: 80px;
 
-    .platform__section {
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin: 70px 0 40px 0;
+    }
+
+    &__section {
         display: flex;
         width: 650px;
         justify-content: space-between;
-        color: #fff;
         text-transform: capitalize;
         align-items: baseline;
-        color: #cacacb;
+        color: $main-color;
     }
 }
 
 .title-section {
     font-size: 15px;
-    color: #fff;
+    color: $main-color;
 }
 
 .device {
-    color: #525353;
+    color: $second-color;
     font-size: 13px;
     align-items: baseline;
     cursor: pointer;
@@ -190,7 +187,7 @@ body {
     &_active {
         transform: scale(1.1);
         font-weight: bold;
-        border-bottom: 1px solid #8c8c8c;
+        border-bottom: 1px solid $main-color;
     }
 }
 
@@ -200,7 +197,6 @@ body {
 
     &__prev {
         margin-right: 20px;
-
     }
 }
 
@@ -219,7 +215,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
-        color: #fff;
+        color: $main-color;
         margin-bottom: 20px;
         font-size: 18px;
         opacity: .75;
@@ -228,22 +224,20 @@ body {
 
     &__assessment {
         border-radius: 50%;
-        border: 3px solid #282a2c;
+        border: 3px solid $second-color;
         padding: 12px;
     }
 
     &__genre {
-        color: #7c7c7c;
+        color: $second-color;
         font-size: 12px;
-        opacity: .75;
         font-weight: bold;
         text-transform: capitalize;
     }
 
     &__company-date {
-        color: #676768;
+        color: $second-color;
         font-size: 12px;
-        opacity: .75;
         text-transform: capitalize;
     }
 
@@ -252,11 +246,10 @@ body {
         justify-content: space-between;
         align-items: center;
         margin-top: 20px;
-        opacity: .75;
     }
 
     &__price {
-        color: #fff;
+        color: $main-color;
         font-size: 18px;
         display: flex;
     }
@@ -273,7 +266,7 @@ body {
 
 .preview {
     max-width: 1400px;
-    margin: 80px auto;
+    margin: 0 auto;
 
     &__header {
         color: #bebebe;
@@ -321,7 +314,7 @@ body {
 }
 
 .categories {
-    color: #fff;
+    padding: 80px 0 40px 0;
 
     &__wrapper {
         display: flex;
@@ -331,26 +324,70 @@ body {
 
     &__img {
         position: relative;
+        margin-right: 5px;
+        max-height: 265px;
+        text-decoration: none;
+        color: $main-color;
+
+        .a{
+            width: 550px;
+        }
+
+        img {
+            max-height: 265px;
+            max-width: 100%;
+
+        }
+
+        &:hover {
+            transition: $main-transition;
+            transform: scale(1.01);
+        }
     }
 
     &__name {
         position: absolute;
         top: 90%;
-        left: 80%;
+        cursor: pointer;
+        height: 265px;
 
         &::after {
+            position: absolute;
             content: url(../img/categories/cat__next.png);
-            padding-left: 60px;
+            padding-left: 10px;
+        }
+
+        &_1 {
+            left: 75%;
+            width: 550px;
+        }
+
+        &_2 {
+            left: 80%;
+        }
+
+        &_3 {
+            left: 80%;
+        }
+
+        &_4 {
+            left: 83%;
         }
     }
 
     &__show {
         text-decoration: none;
-        color: #fff;
-        margin: 20px auto 100px;
+        color: $main-color;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+
+        &:hover {
+            transition: $main-transition;
+            color: #fff;
+        }
     }
 }
-
 
 .categories__none {
     display: none;
@@ -365,10 +402,10 @@ body {
     padding-bottom: 50px;
 }
 
-.footer__left {
+.social {
     padding: 128px 0 0 50px;
 
-    .footer__title-left {
+    &__title {
         color: #fff;
         font-size: 18px;
         text-align: center;
@@ -376,7 +413,7 @@ body {
         margin-bottom: 30px;
     }
 
-    .footer__social {
+    &__wrapper {
         display: flex;
         width: 200px;
         justify-content: space-between;
@@ -384,12 +421,11 @@ body {
 
 }
 
-.footer__right {
+.nav {
     display: flex;
     width: 570px;
     justify-content: space-between;
     padding: 90px 0 0 110px;
-    font-size: 16px;
     font-weight: bold;
     text-transform: capitalize;
     flex-wrap: wrap;
@@ -404,23 +440,23 @@ body {
     text-decoration: none;
 }
 
-.game__line,
-.publisher__line,
-.cate__line,
-.information__line,
-.week__line {
+.nav-title-1__line,
+.nav-title-2__line,
+.nav-title-3__line,
+.nav-title-4__line,
+.nav-title-5__line {
     height: 2px;
     width: 15px;
     margin-top: 12px;
     margin-bottom: 25px;
 }
 
-.game {
+.nav-title-1 {
     color: #bb1344;
 
     &:hover &__line {
         width: 100%;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 
     &__line {
@@ -429,16 +465,16 @@ body {
 
     .link-text:hover {
         color: #bb1344;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 }
 
-.publisher {
+.nav-title-2 {
     color: #75bb61;
 
     &:hover &__line {
         width: 100%;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 
     &__line {
@@ -447,16 +483,16 @@ body {
 
     .link-text:hover {
         color: #75bb61;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 }
 
-.cate {
+.nav-title-3 {
     color: #f9e876;
 
     &:hover &__line {
         width: 100%;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 
     &__line {
@@ -465,16 +501,16 @@ body {
 
     .link-text:hover {
         color: #f9e876;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 }
 
-.information {
+.nav-title-4 {
     color: #39a8d2;
 
     &:hover &__line {
         width: 100%;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 
     &__line {
@@ -483,16 +519,16 @@ body {
 
     .link-text:hover {
         color: #39a8d2;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 }
 
-.week {
+.nav-title-5 {
     color: #4d3291;
 
     &:hover &__line {
         width: 100%;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 
     &__line {
@@ -501,11 +537,9 @@ body {
 
     .link-text:hover {
         color: #4d3291;
-        transition: ease 0.3s all;
+        transition: $main-transition;
     }
 }
-
-
 
 @media screen and (max-width: 1024px) {
 
@@ -517,11 +551,6 @@ body {
         left: 91%;
     }
 
-    .slide__pre__oreder img {
-        max-width: 100%;
-        transform: scale(1);
-        filter: none;
-    }
 }
 
 @media screen and (max-width: 800px) {
@@ -555,12 +584,12 @@ body {
         flex-direction: column-reverse;
     }
 
-    .footer__left {
+    .social {
         margin: 20px auto;
         width: 300px;
     }
 
-    .footer__right {
+    .nav {
         margin-top: 40px;
         margin-left: 10px;
     }
@@ -591,11 +620,7 @@ body {
         padding-top: 10px;
     }
 
-    .pre-order__slide {
-        padding-bottom: 160px;
-    }
-
-    .footer__right {
+    .nav {
         max-width: 100%;
     }
 
@@ -604,7 +629,7 @@ body {
     }
 
     .link-text,
-    .publisher,
+    .nav-title-2,
     .cate,
     .information,
     .week {
@@ -617,7 +642,7 @@ body {
         margin-top: 20px;
     }
 
-    .footer__right {
+    .nav {
         justify-content: start;
     }
 }
