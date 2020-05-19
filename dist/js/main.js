@@ -18,17 +18,10 @@ $(function(){
         $('.search').remove();
     });
 
-    //попап форма
-    $('.preorder').magnificPopup({
-        type: 'inline',
-        focus: '#name',
-        mainClass: 'animated flipInY'
-    });
-
     //сладйер шапки
     $('.header__slider').slick({
-        prevArrow: '<img class="slide__prev" src="img/prev__slide.svg">',
-        nextArrow: '<img class="slide__next" src="img/next__slide.svg">',
+        prevArrow: '<img class="slide__prev" src="img/header/prev__slide.svg">',
+        nextArrow: '<img class="slide__next" src="img/header/next__slide.svg">',
         autoplay: true,
         autoplayTimeout: 2000, 
         dots: true,
@@ -36,6 +29,8 @@ $(function(){
         speed: 500,
         fade: true,
         cssEase: 'linear',
+        lazyLoad: 'ondemand',
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -46,14 +41,45 @@ $(function(){
         ]
     });
 
+    //modal
+    $('.modal__close').on('click', function () {
+        $('.overlay, #preorder-modal').fadeOut('slow');
+    });
+
+    $('.header__preorder').each(function(i){
+        $(this).on('click', function(){
+            $('.modal__game').text($('.header__text').eq(i).text());
+            $('.overlay, #preorder-modal').fadeIn('slow');
+        });
+    });
+
+    $('#preorder-modal form').validate({
+        rules:{
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            }
+            },
+            messages: {
+                name: "Пожалуйста введите ваше имя",
+                email: {
+                    required: "Пожалуйста введите свою почту",
+                    email: "Неправильно введен адрес почты"
+                }
+            }
+        
+    });
+
     //сладйер карточки игр
-    $('.sliderd__platform').slick({
-        prevArrow: $('.platform__prev'),
-        nextArrow: $('.platform__next'),
+    $('.slider-platform').slick({
+        prevArrow: $('.btm__prev_platform'),
+        nextArrow: $('.btm__next_platform'),
         infinite: false,
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 2,
+        lazyLoad: 'ondemand',
         responsive: [
             {
                 breakpoint: 1024,
@@ -83,34 +109,23 @@ $(function(){
     //фильтры слайдера
     $('.device').on('click', function () {
         var filterClass = $(this).data('value');
-        $('.sliderd__platform').slick('slickUnfilter');
-        $('.sliderd__platform').slick('slickFilter', filterClass);
-        $('.device').removeClass('tans');
-        $(this).addClass('tans');
+        $('.slider-platform').slick('slickUnfilter');
+        $('.slider-platform').slick('slickFilter', filterClass);
+        $('.device').removeClass('device_active');
+        $(this).addClass('device_active');
     });
  
     //слайдер анонса игр
-    $('.pre-order__slider').slick({
-        prevArrow: $('.preorder__prev'),
-        nextArrow: $('.preorder__next'),
-        centerMode: true,
-        centerPadding: '330px',
-        slidesToShow: 1,
+    $('.preview__slider').slick({
+        prevArrow: $('.btm__prev_preview'),
+        nextArrow: $('.btm__next_preview'),
+        slidesToShow: 2,
+        lazyLoad: 'ondemand',
+        adaptiveHeight: true,
         responsive: [
-            {
-                breakpoint: 1350,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '0px',
-                }
-            },
             {
                 breakpoint: 480,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
                     slidesToShow: 1
                 }
             }
@@ -120,7 +135,7 @@ $(function(){
     //показ остльных категорий игр
     $('.categories__show').on('click', function (e) {
         e.preventDefault();
-        $('.categories__none').slideToggle(400).addClass('show');
+        $('.categories__none').slideToggle('slow').addClass('show');
     });
 
 });

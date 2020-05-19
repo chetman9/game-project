@@ -26,9 +26,8 @@ gulp.task('css', function () {
     return gulp.src([
         'node_modules/normalize.css/normalize.css',
         'node_modules/slick-carousel/slick/slick.css',
-        'node_modules/magnific-popup/dist/magnific-popup.css'
     ])
-        .pipe(concat('_libs.scss'))
+        .pipe(concat('*.scss'))
         .pipe(gulp.dest('app/scss'))
         .pipe(browserSync.reload({ stream: true }))
 });
@@ -41,8 +40,10 @@ gulp.task('html', function () {
 gulp.task('js', function () {
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/jquery-validation/dist/jquery.validate.min.js',
+        'app/js/main.js',
     ])
-        .pipe(concat('libs.min.js'))
+        .pipe(concat('all.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({ stream: true }))

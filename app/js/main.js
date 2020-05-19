@@ -48,10 +48,28 @@ $(function(){
 
     $('.header__preorder').each(function(i){
         $(this).on('click', function(){
-            $('#preorder-modal .modal__game').text($('.header__text').eq(i).text());
+            $('.modal__game').text($('.header__text').eq(i).text());
             $('.overlay, #preorder-modal').fadeIn('slow');
         });
-    })
+    });
+
+    $('#preorder-modal form').validate({
+        rules:{
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            }
+            },
+            messages: {
+                name: "Пожалуйста введите ваше имя",
+                email: {
+                    required: "Пожалуйста введите свою почту",
+                    email: "Неправильно введен адрес почты"
+                }
+            }
+        
+    });
 
     //сладйер карточки игр
     $('.slider-platform').slick({

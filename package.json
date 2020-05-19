@@ -20,7 +20,7 @@
     "normalize.css": "^8.0.1"
   },
   "dependencies": {
-    "magnific-popup": "^1.1.0",
+    "jquery-validation": "^1.19.1",
     "slick-carousel": "^1.8.1"
   }
 }
