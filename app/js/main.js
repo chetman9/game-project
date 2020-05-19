@@ -41,6 +41,18 @@ $(function(){
         ]
     });
 
+    //modal
+    $('.modal__close').on('click', function () {
+        $('.overlay, #preorder-modal').fadeOut('slow');
+    });
+
+    $('.header__preorder').each(function(i){
+        $(this).on('click', function(){
+            $('#preorder-modal .modal__game').text($('.header__text').eq(i).text());
+            $('.overlay, #preorder-modal').fadeIn('slow');
+        });
+    })
+
     //сладйер карточки игр
     $('.slider-platform').slick({
         prevArrow: $('.btm__prev_platform'),
@@ -49,7 +61,6 @@ $(function(){
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 2,
-        adaptiveHeight: true,
         lazyLoad: 'ondemand',
         responsive: [
             {
@@ -106,7 +117,7 @@ $(function(){
     //показ остльных категорий игр
     $('.categories__show').on('click', function (e) {
         e.preventDefault();
-        $('.categories__none').slideToggle(400).addClass('show');
+        $('.categories__none').slideToggle('slow').addClass('show');
     });
 
 });
