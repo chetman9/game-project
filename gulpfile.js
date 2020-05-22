@@ -43,7 +43,7 @@ gulp.task('js', function () {
         'node_modules/jquery-validation/dist/jquery.validate.min.js',
         'app/js/main.js',
     ])
-        .pipe(concat('all.min.js'))
+        .pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({ stream: true }))

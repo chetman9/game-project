@@ -106,6 +106,11 @@ $(function(){
         ]
     });
 
+    $('.slide-platform').on('click', function (){
+        $('.slide__hide').removeClass('slide__hide');
+        $(this).fadeIn('slow');
+    });
+
     //фильтры слайдера
     $('.device').on('click', function () {
         var filterClass = $(this).data('value');
